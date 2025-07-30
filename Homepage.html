@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Puma - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="scriptsheet" href="Script.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body onload="updateCartCount()">
+    <header class="main-header">
+      <div class="logo">Puma</div>
+      <img src="puma-logo-cover.png" alt="Puma Logo" class="logo-img" />
+
+      <nav>
+        <a href="Homepage.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </header>
+
+    <div class="Heading deals">
+      <div>
+        <h1>Deals of the Day</h1>
+        <p>Don't miss out on our exclusive offers!</p>
+      </div>
+    </div>
+    <section class="deals">
+      <div class="deal-item">
+        <img src="box img11.jpg" alt="Deal 1" />
+        <h3>50% Off on Sneakers</h3>
+        <p>Grab your favorite sneakers at half the price!</p>
+        <a href="Products.html" class="btn">Shop Now</a>
+      </div>
+      <div class="deal-item">
+        <img src="box img2.jpg" alt="Deal 2" />
+        <h3>30% Off on Clothing</h3>
+        <p>Upgrade your wardrobe with our latest collection.</p>
+        <a href="Products.html" class="btn">Shop Now</a>
+      </div>
+      <div class="deal-item">
+        <img src="box img33.jpg" alt="Deal " />
+        <h3>20% Off on Jerseys</h3>
+        <p>Grab your team Jerseys at the best price!.</p>
+        <a href="Products.html" class="btn">Shop Now</a>
+      </div>
+    </section>
+
+    <div class="MainHeading">
+      <div>
+        <h1>STEP INTO THE SPOTLIGHT</h1>
+        <p>THE NEW JERSEYS ARE HERE TO SHINE.</p>
+        <a href="Products.html" class="btn">Shop Now</a>
+      </div>
+    </div>
+
+    <div>
+      <section class="Jerseys-section">
+        <div class="Jerseys-card">
+          <img src="RCB.jpg" alt="RCB Jersey" />
+          <h3>UNLEASH YOUR PRIDE</h3>
+          <p>2025 PUMA × RCB AUTHENTIC JERSEY</p>
+          <a href="#" class="btn">SHOP NOW</a>
+        </div>
+
+        <div class="Jerseys-card">
+          <img src="F1 img.jpg" alt="Ferrari Edition" />
+          <h3>PUMA SCUDERIA FERRARI HP</h3>
+          <p>MIAMI LIMITED EDITION</p>
+          <a href="#" class="btn">SHOP NOW</a>
+        </div>
+
+        <div class="Jerseys-card">
+          <img src="DC.jpg" alt="DC Jersey" />
+          <h3>CAPITALS' PRIDE</h3>
+          <p>2025 PUMA × DC AUTHENTIC JERSEY</p>
+          <a href="#" class="btn">SHOP NOW</a>
+        </div>
+      </section>
+    </div>
+    
+
+<section class="price-drop">
+  <h2>FRESH PRICE DROP</h2>
+
+  <div class="carousel-container">
+    <button class="scroll-btn left" onclick="scrollCarousel('left')">&#8249;</button>
+
+    <div class="product-carousel" id="carousel">
+      <div class="product-card">
+            <div class="discount-tag">-50%</div>
+            <img src="Moving img1.jpg" alt="RS-X Heritage Sneakers" />
+            <h4>RS-X Heritage Sneakers</h4>
+            <p class="price">₹3,499 <span class="old-price">₹6,999</span></p>
+          </div>
+
+          <div class="product-card">
+            <div class="discount-tag">-25%</div>
+            <img src="Moving img2.jpg" alt="Darter Pro Running Shoes" />
+            <h4>Darter Pro Running Shoes</h4>
+            <p class="price">₹5,499 <span class="old-price">₹10,999</span></p>
+          </div>
+
+          <div class="product-card">
+            <div class="discount-tag">-47%</div>
+            <img src="Moving img3.jpg" alt="Skyrocket Lite" />
+            <h4>Skyrocket Lite Men's Running Shoes</h4>
+            <p class="price">₹2,649 <span class="old-price">₹4,999</span></p>
+          </div>
+
+          <div class="product-card">
+            <div class="discount-tag">-50%</div>
+            <img src="Moving img4.jpg" alt="X-Ray 2 Square" />
+            <h4>X-Ray 2 Square Women’s Casual Shoes</h4>
+            <p class="price">₹3,999 <span class="old-price">₹7,999</span></p>
+          </div>
+          <div class="product-card">
+            <div class="discount-tag">-50%</div>
+            <img src="Moving img5.jpg" alt="X-Ray 2 Square" />
+            <h4>X-Ray 2 Square Women’s Casual Shoes</h4>
+            <p class="price">₹3,999 <span class="old-price">₹7,999</span></p>
+          </div>
+          <div class="product-card">
+            <div class="discount-tag">-50%</div>
+            <img src="Moving img1.jpg" alt="X-Ray 2 Square" />
+            <h4>X-Ray 2 Square Women’s Casual Shoes</h4>
+            <p class="price">₹3,999 <span class="old-price">₹7,999</span></p>
+          </div>
+          <div class="product-card">
+            <div class="discount-tag">-50%</div>
+            <img src="Moving img3.jpg" alt="X-Ray 2 Square" />
+            <h4>X-Ray 2 Square Women’s Casual Shoes</h4>
+            <p class="price">₹3,999 <span class="old-price">₹7,999</span></p>
+          </div>
+          <!-- Add more product cards as needed -->
+        </div>
+    </div>
+
+    <button class="scroll-btn right" onclick="scrollCarousel('right')">&#8250;</button>
+  </div>
+</section>
+<div class="palermo-section_div">
+<section class="palermo-section">
+  <div class="palermo-left">
+    <div class="text-content">
+      <h2>PALERMO</h2>
+      <p>AN EVERYDAY ICON</p>
+      <a href="products.html" class="btn">SHOP NOW</a>
+    </div>
+    <img src="section 4.1.jpg" alt="Palermo Shoes" class="shoe-img" />
+    
+  </div>
+
+  <div class="palermo-right">
+    <img src="section 4.jpg" alt="Model Wearing Shoes" class="full-img" />
+  </div>
+</section>
+</div>
+
+
+
+<section class="season-deals">
+  <h2>END OF SEASON DEALS</h2>
+  <div class="deals-row">
+
+    <a href="products.html?filter=sneakers" class="deal-circle">SNEAKERS<br>UNDER<br>₹3999</a>
+    <a href="products.html?filter=sports-shoes" class="deal-circle">SPORTS<br>SHOES UNDER<br>₹3499</a>
+    <a href="products.html?filter=buy2-get-extra20" class="deal-circle">BUY 2 & GET<br>EXTRA 20% ON<br>NEW STYLES</a>
+    <a href="products.html?filter=buy2-get-min40" class="deal-circle">BUY 2 & GET<br>MIN 40%+<br>EXTRA 40%</a>
+    <a href="products.html?filter=first-time-discount" class="deal-circle">FIRST TIME<br>ON DISCOUNT</a>
+
+    <!-- <div class="deal-circle">SNEAKERS<br>UNDER<br>₹3999</div>
+    <div class="deal-circle">SPORTS<br>SHOES UNDER<br>₹3499</div>
+    <div class="deal-circle">BUY 2 & GET<br>EXTRA 20% ON<br>NEW STYLES</div>
+    <div class="deal-circle">BUY 2 & GET<br>MIN 40%+<br>EXTRA 40%</div>
+    <div class="deal-circle">FIRST TIME<br>ON DISCOUNT</div> -->
+  </div>
+</section>
+
+<section class="hero-overlay">
+  <img src="squad image.jpg" alt="Palermo Squad" class="background-img" />
+  
+  <div class="hero-text">
+    <h2>FOR YOU AND THE SQUAD:<br>PALERMO'S BACK.</h2>
+    <p>DRESS IT UP, DRESS IT DOWN, JUST MAKE IT YOURS.</p>
+    <a href="products.html" class="btn">EXPLORE STYLE GUIDE</a>
+  </div>
+</section>
+
+<section class="sports-section">
+  <h2>GEAR UP FOR SPORTS</h2>
+  <div class="sports-grid">
+    <div class="grid">
+      <a href="products.html?category=running" class="sports-card">
+      <img src="sports box 11.jpg" alt="Running">
+      <span>RUNNING</span>
+      </a>
+    </div>
+
+    <div class="grid">
+      <a href="products.html?category=football" class="sports-card">
+      <img src="sports box 22.jpg" alt="Football">
+      <span>FOOTBALL</span>
+      </a>
+    </div>
+
+    <div class="grid">
+      <a href="products.html?category=training" class="sports-card">
+      <img src="sports box 3.jpg" alt="Training">
+      <span>TRAINING</span>
+      </a>
+    </div>
+
+    <div class="grid">
+      <a href="products.html?category=basketball" class="sports-card">
+      <img src="sports box 4.jpg" alt="Basketball">
+      <span>BASKETBALL</span>
+      </a>
+    </div>
+
+    <div class="grid">
+      <a href="products.html?category=studio" class="sports-card">
+      <img src="sports box 5.jpg" alt="Studio">
+      <span>STUDIO</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="promo-banner" id="promoBanner">
+  <button class="close-btn" onclick="closePromo()">✖</button>
+  <div class="promo-content">
+    <h3>BUY 2 GET FLAT 50% + EXTRA 40% OFF</h3>
+    <p>LAST CHANCE TO BUY</p>
+    <a href="products.html" class="promo-btn">SHOP NOW</a>
+    <div class="countdown">Ends in <span id="timer">05:00</span></div>
+    <small>Auto-applied at checkout | T&C Apply</small>
+  </div>
+</section>
+
+<script>
+  // Close the banner
+  function closePromo() {
+    document.getElementById("promoBanner").style.display = "none";
+  }
+
+  // Countdown timer (5 minutes)
+  let time = 5 * 60; // seconds
+
+  const timerElement = document.getElementById("timer");
+
+  function updateTimer() {
+    const minutes = Math.floor(time / 60);
+    const seconds = time % 60;
+    timerElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    time--;
+
+    if (time < 0) {
+      clearInterval(timerInterval);
+      document.getElementById("promoBanner").style.display = "none"; // Hide after countdown
+    }
+  }
+
+  updateTimer(); // initial call
+  const timerInterval = setInterval(updateTimer, 1000);
+</script>
+
+<!-- 
+<div class="scroller">
+    <a href="product1.html" class="slide-link">
+      <div class="slide">
+        <img src="Moving img1.jpg" alt="Product 1" />
+      </div>
+    </a>
+
+    <a href="product2.html" class="slide-link">
+      <div class="slide">
+        <img src="Moving img2.jpg" alt="Product 2" />
+      </div>
+    </a>
+
+    <a href="product3.html" class="slide-link">
+      <div class="slide">
+        <img src="Moving img3.jpg" alt="Product 3" />
+      </div>
+    </a>
+
+    <a href="product4.html" class="slide-link">
+      <div class="slide">
+        <img src="Moving img4.jpg" alt="Product 4" />
+      </div>
+    </a>
+
+    <a href="product5.html" class="slide-link">
+      <div class="slide">
+        <img src="Moving img5.jpg" alt="Product 5" />
+      </div>
+    </a>
+  </div> -->
+
+  <!-- <section class="hero">
+  <div class="hero-content">
+    <h1>Your Heading Here</h1>
+    <p>Your subheading or description goes here.</p>
+    <button>Click Me</button>
+  </div>
+  <video autoplay muted loop>
+    <source src="your-video.mp4" type="video/mp4">
+  </video>
+</section> -->
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+
+  </body>
+</html>

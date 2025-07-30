@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Puma - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="scriptsheet" href="Script.js" />
+    <link rel="stylesheet" href="Single Product style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body onload="updateCartCount()">
+    <header class="main-header">
+      <div class="logo">Puma</div>
+      <img src="puma-logo-cover.png" alt="Puma Logo" class="logo-img" />
+
+      <nav>
+        <a href="Homepage.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </nav>
+    </header>
+
+    <section class="promo-banner" id="promoBanner">
+      <button class="close-btn" onclick="closePromo()">✖</button>
+      <div class="promo-content">
+        <h3>BUY 2 GET FLAT 50% + EXTRA 40% OFF</h3>
+        <p>LAST CHANCE TO BUY</p>
+        <a href="products.html" class="promo-btn">SHOP NOW</a>
+        <div class="countdown">Ends in <span id="timer">05:00</span></div>
+        <small>Auto-applied at checkout | T&C Apply</small>
+      </div>
+    </section>
+
+    <script>
+      // Close the banner
+      function closePromo() {
+        document.getElementById("promoBanner").style.display = "none";
+      }
+
+      // Countdown timer (5 minutes)
+      let time = 5 * 60; // seconds
+
+      const timerElement = document.getElementById("timer");
+
+      function updateTimer() {
+        const minutes = Math.floor(time / 60);
+        const seconds = time % 60;
+        timerElement.textContent = `${String(minutes).padStart(
+          2,
+          "0"
+        )}:${String(seconds).padStart(2, "0")}`;
+        time--;
+
+        if (time < 0) {
+          clearInterval(timerInterval);
+          document.getElementById("promoBanner").style.display = "none"; // Hide after countdown
+        }
+      }
+
+      updateTimer(); // initial call
+      const timerInterval = setInterval(updateTimer, 1000);
+    </script>
+
+    <div class="product-root">
+      <!-- Left: Product images in two-column grid -->
+      <div class="image-grid">
+        <img src="/Moving img1.jpg" alt="Sneaker 1" class="product-image" />
+        <img src="/Moving img2.jpg" alt="Sneaker 2" class="product-image" />
+        <img src="/Moving img3.jpg" alt="Sneaker 3" class="product-image" />
+        <img src="/Moving img4.jpg" alt="Sneaker 4" class="product-image" />
+        <img src="Moving img5.jpg" alt="Sneaker 5" class="product-image" />
+        <img src="/Moving img2.jpg" alt="Sneaker 6" class="product-image" />
+      </div>
+
+      <!-- Right: Sticky scrollable product details -->
+      <aside class="sticky-sidebar">
+        <div class="details-panel">
+          <h1>X-Ray 2 Square Superior Comfort Sneakers</h1>
+
+          <div class="price-info">
+            <span class="current-price">₹3,599</span>
+            <span class="original-price">₹7,999</span>
+            <span class="discount-badge">-55%</span>
+          </div>
+
+          <div class="color-desc">
+            Dark Shadow-Puma Black-Spectra Yellow-Limoges-High Risk Red
+          </div>
+
+          <div class="extra-offer">Extra 10% off at checkout</div>
+
+          <div class="size-selection">
+            <label for="size-options">Size</label>
+            <div class="size-options" id="size-options">
+              <button class="size-btn active">UK 6</button>
+              <button class="size-btn">UK 7</button>
+              <button class="size-btn">UK 8</button>
+              <button class="size-btn">UK 9</button>
+              <button class="size-btn">UK 10</button>
+              <button class="size-btn">UK 11</button>
+            </div>
+          </div>
+
+          <button class="add-to-cart-btn">ADD TO CART</button>
+
+          <div class="shipping-info">
+            ✔ This item qualifies for free shipping!
+          </div>
+
+          <div class="returns-info">
+            Free returns on all qualifying orders within 14 days of your order
+            delivery date.
+          </div>
+
+          <section class="product-description">
+            <h2>Description</h2>
+            <p>
+              Break the mould with the PUMA X-Ray! A bold mix of futuristic
+              design and supreme comfort, these sneakers are made to make an
+              impact. With their striking layered look and edgy vibe, they’ll
+              have you stepping into the future with confidence.
+            </p>
+            <ul>
+              <li>
+                SOFTFOAM+: Step-in comfort sockliner designed to provide soft
+                cushioning thanks to its extra thick heel
+              </li>
+              <li>
+                IMEVA: PUMA's material for a lightweight and comfortable feel
+              </li>
+              <li>Width: Regular</li>
+              <li>Toe Type: Rounded</li>
+              <li>Fastener: Laces</li>
+              <li>Heel type: Flat</li>
+              <li>PUMA branding details</li>
+            </ul>
+          </section>
+
+          <section class="shipping-returns">
+            <h2>Shipping and Returns</h2>
+            <p>
+              Free return on all qualifying orders within 14 days of your order
+              delivery date.
+            </p>
+            <p>
+              For any queries, please contact Customer Service at:
+              <a href="mailto:customercareindia@puma.com"
+                >customercareindia@puma.com</a
+              >
+            </p>
+          </section>
+        </div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,627 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+.main-header {
+  background: #111;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header nav a {
+  color: white;
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+
+.btn {
+  background: #ff3e3e;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.logo-img {
+  width: 100px;
+    height: auto;
+  text-align: center;
+  height: auto;
+}
+.Heading deals {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0;
+}
+.deal-item {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.deals {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.deal-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* OR use cover if you want it to fill */
+  display: block;
+  border-radius: 0px;
+  /* transform: scale(1.05); */
+} 
+/* .deal-item img:hover img {
+  transform: scale(1.05);
+} */
+.MainHeading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5em;
+  flex-direction: column;
+}
+.Jerseys-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.Jerseys-card {
+  width: 300px;
+  text-align: center;
+}
+
+.Jerseys-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Jerseys-card h3 {
+  font-size: 1.2rem;
+  margin: 15px 0 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.Jerseys-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.Jerseys-card .btn {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+ .price-drop {
+  padding: 30px;
+  background: #fff;
+  position: relative;
+}
+
+.price-drop h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.product-card {
+  min-width: 250px;
+  flex-shrink: 0;
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.product-card img {
+  width: 250px;
+  height: 250px;
+}
+
+.discount-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #a00;
+  color: white;
+  font-size: 0.8em;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.product-card h4 {
+  font-size: 1em;
+  margin: 10px 0 5px;
+}
+
+.price {
+  font-weight: bold;
+  color: #c00;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 5px;
+  font-size: 0.9em;
+}
+
+/* Scroll arrows */
+.scroll-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  font-size: 1.5em;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.scroll-btn.left {
+  position: absolute;
+  left: 0;
+}
+
+.scroll-btn.right {
+  position: absolute;
+  right: 0;
+} 
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;  /* 💡 Important: prevents buttons from floating on scroll */
+}
+
+.product-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  width: 100%;  /* 💡 Important: lets scroll area grow correctly */
+}
+
+.product-card {
+  min-width: 250px;
+  flex-shrink: 0;
+  border: 1px solid #eee;
+  padding: 10px;
+  text-align: center;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.scroll-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  font-size: 1.5em;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+.palermo-section {
+  background-color: #4e2e1e;
+  /* margin-top: 50px; */
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
+
+.palermo-left {
+   /* brown shade */
+  color: white;
+  flex: 1;
+  padding-right: 100px;
+  position:relative;
+  min-width: 300px;
+  /* padding: 40px 20px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  margin-left: 150px;
+}
+
+.palermo-left .text-content {
+  z-index: 1;
+}
+
+.palermo-left h2 {
+  font-size: 2rem;
+  margin-left: 50px;
+  padding-top: 100px;
+  font-weight: 700;
+  color: white;
+}
+
+.palermo-left p {
+  font-size: 1.1rem;
+  margin-left: 50px;
+  padding-top: 0px;
+  /* margin-bottom: 10px; */
+}
+
+.palermo-left .btn {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin-left: 50px;
+  text-decoration: none;
+  font-weight: bold;
+   margin-bottom: 450px;
+  border: none;
+  transition: background 0.3s;
+}
+
+.palermo-left .btn:hover {
+  background-color: #ccc;
+}
+
+.palermo-left .shoe-img {
+  width: 750px;
+  height: 350px;
+  object-fit: cover;
+  margin-top: 250px;
+  position: absolute;
+  margin-right: 100px;
+}
+
+.palermo-right {
+  flex: 1;
+  min-width: 300px;
+  
+}
+
+.palermo-right .full-img {
+  width: 550px;
+  height: 600px;
+  /* margin-top: 20px; */
+  object-fit: cover;
+  position: static;
+  margin-bottom: 4rem;
+}
+
+
+
+
+.season-deals {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.season-deals h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+}
+
+.deals-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.deal-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #b30000; /* Puma Red */
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #b30000;
+  transition: transform 0.2s ease;
+}
+
+.deal-circle:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.deal-circle {
+  text-decoration: none;
+  color: white;
+}
+
+
+.hero-overlay {
+  position: relative;
+  width: 100%;
+  height: 85vh; /* Full screen or adjust */
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.background-img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  color: white;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.hero-text .btn {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.hero-text .btn:hover {
+  background-color: #ccc;
+}
+
+/* Optional: Dark overlay for better readability */
+/* .hero-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 40%, transparent 100%);
+  z-index: 1;
+} */
+
+.sports-section {
+  text-align: center;
+}
+
+.sports-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.sports-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sports-card {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+}
+/* .grid {
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 0.625rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  grid-template-rows: repeat(5, calc(20% - 0.8rem));
+} */
+
+.sports-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: transform 0.3s;
+  padding-bottom: 20px;
+}
+
+.sports-card span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.sports-card:hover img {
+  transform: scale(1.05);
+}
+
+.promo-banner {
+  background: linear-gradient(90deg, #c80000, #a90000, #c80000);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: sans-serif;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.promo-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.promo-content p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.promo-btn {
+  display: inline-block;
+  margin: 10px 0;
+  background: white;
+  color: #c80000;
+  padding: 8px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.promo-btn:hover {
+  background: #f0f0f0;
+}
+
+.promo-content small {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.countdown {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* .slide {
+  width: 300px;
+  height: 400px;
+  margin: 0 auto 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transform-origin: 0% 2300px; 
+  will-change: transform;
+  transition: transform 0.3s ease;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-link {
+  display: block;
+  text-decoration: none;
+}
+
+.slide:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+} */
+
+
+
+
+/* .hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+} */
+
+
+
+
+
+
